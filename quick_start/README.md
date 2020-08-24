@@ -17,13 +17,20 @@ You should also have received:
  - 1 HDMI dongle
 
 ## 3-camera system
+
+![](pics/overview1.jpg)
+
 Power and network cables were disconnected to prevent any connector damage during shipping.
 
 ### Power
-Each of the 3 Raspberry Pi needs power from the USB power adapter.
+**(A)** connect each of the 3 Raspberry Pi to the USB power adapter.
 
 ### Network
-Each of the 3 Raspberry Pi needs network form the Ethernet switch.
+**(B)** connect each of the 3 Raspberry Pi to the Ethernet switch.
+
+### Mains
+- **(C)** connect the Ethernet switch to mains.
+- **(D)** connect the USB power adapter to mains.
 
 ## Stitcher board and display
 ### Stitcher
