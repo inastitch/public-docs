@@ -54,6 +54,14 @@ Power and network cables were disconnected to prevent any connector damage durin
 
  - **(A)** connect the USB cable to the stitcher.
 
+Numpad keys:
+ - ``Enter`` (Entrée): run OpenCV calibration with current video frames to make new transformation
+ - ``Backspace`` (<-): reload saved transformation
+ - ``Star`` (\*): save current transformation
+ - ``Slash`` (/): no transformation
+ - ``Zero`` (0): Pause/Unpause
+ - ``One`` (1): Enable/disable overlay
+
 ## Other possible connections
 ### Smartphone and VLC
 The Ethernet switch includes a WiFi hotspot. Connect to the SSID ``InatechDemo`` on 5G WiFi (there is no password). Once connected, open the following link with Android VLC:
