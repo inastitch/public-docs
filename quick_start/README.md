@@ -5,6 +5,8 @@ This page describes how to connect together the different parts of the ``inasitc
 This is the final result:
 ![](pics/overview.jpg)
 
+![](pics/block_diag.png)
+
 ### Shipping content
 The demonstration hardware is made of:
  - 3 [Raspberry Pi](https://www.raspberrypi.org) 3 single-board computers and 3 camera
@@ -49,13 +51,15 @@ The Ethernet switch includes a WiFi hotspot. Connect to the SSID ``InatechDemo``
     rtsp://10.42.0.1:8554/inastitch
 
 ### Laptop and DLT
-Each computer (camera and stitcher) runs a DLT daemon.
+Each computer (camera system and stitcher) runs a DLT daemon.
 
 The stitcher board has a fixed IP address: ``10.42.0.1``.
 The camera boards have IP address chosen by the DHCP server running is the Ethernet switch. Please use the web interface of the switch at: ``http://10.42.0.254`` to find the IP addresses of the camera systems.
 
 ### Oscilloscope and PTP clock
 It is possible measure the delay between the system clocks of the camera systems. The linux kernel was modified to output a *pulse per second* (i.e., ``PPS``) on the ``GPIO 18`` pin.
+
+More about Raspberry Pi GPIO: https://www.raspberrypi.org/documentation/usage/gpio/
 
 ![](pics/pinout_ptp_pps.jpg)
 
