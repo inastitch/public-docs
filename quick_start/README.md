@@ -37,6 +37,8 @@ Power and network cables were disconnected to prevent any connector damage durin
 ![](pics/overview2.jpg)
 
 ### Display
+![](pics/overview3.jpg)
+
 ### Numpad
 
 ## Other possible connections
