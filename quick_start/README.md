@@ -7,9 +7,9 @@ This is the final result:
 
 ### Shipping content
 The demonstration hardware is made of:
- - 3 *[Raspberry Pi](https://www.raspberrypi.org) 3* single-board computers and 3 camera
+ - 3 [Raspberry Pi](https://www.raspberrypi.org) 3 single-board computers and 3 camera
  - 1 [Mikrotik](https://mikrotik.com) switch/router
- - 1 *[Raspberry Pi](https://www.raspberrypi.org) 4* single-board computer for the stitcher
+ - 1 [Raspberry Pi](https://www.raspberrypi.org) 4 single-board computer for the stitcher
  - 1 HDMI 8" wide screen
  - 1 USB numpad
 
@@ -40,6 +40,7 @@ Power and network cables were disconnected to prevent any connector damage durin
 ![](pics/overview3.jpg)
 
 ### Numpad
+![](pics/overview4.jpg)
 
 ## Other possible connections
 ### Smartphone and VLC
