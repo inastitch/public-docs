@@ -34,6 +34,8 @@ Power and network cables were disconnected to prevent any connector damage durin
 
 ## Stitcher board and display
 ### Stitcher
+![](pics/overview2.jpg)
+
 ### Display
 ### Numpad
 
