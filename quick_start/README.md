@@ -68,3 +68,5 @@ The Ethernet switch includes a WiFi hotspot. Connect to the SSID ``InatechDemo``
     rtsp://10.42.0.1:8554/inastitch
 
 ![](pics/android_vlc.jpg)
+
+**Note**: The delay of the stream displayed in VLC is caused by VLC which is buffering 1000ms of video by default.
