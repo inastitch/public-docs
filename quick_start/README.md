@@ -86,6 +86,9 @@ Additional topics:
 
 Suggestions of what to show with the demo:
  - Camera frame delay below 100us (*TODO*)
+   - Use overlay to display frame time and pause rendering on a quickly moving object (e.g., spinning fan).
  - Camera software PLL improving with PTP clock sync improving (*TODO*)
+   - Use DLT live trace to show PTP delay beside PLL delay, right after cold start and during PTP stabilization.
  - Stitching at 60fps (and more?) (*TODO*)
+   - Disable stitcher output stream and reach max 60fps. Show higher fps is possible. The camera itself is capturing at 100fps.
  
