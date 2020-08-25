@@ -56,11 +56,12 @@ Power and network cables were disconnected to prevent any connector damage durin
 
 Numpad keys:
  - ``Enter`` (Entrée): run OpenCV calibration with current video frames to make new transformation
+   - Note: the calibration can failed when the amount matching features is too low. Debug images are available over DLT.
  - ``Backspace`` (<-): reload saved transformation
  - ``Star`` (\*): save current transformation
  - ``Slash`` (/): no transformation
- - ``Zero`` (0): Pause/Unpause
- - ``One`` (1): Enable/disable overlay
+ - ``Zero`` (0): Pause/Unpause rendering
+ - ``One`` (1): Enable/Disable "frame time" overlay
 
 ## Smartphone and VLC
 The Ethernet switch includes a WiFi hotspot. Connect to the SSID ``InatechDemo`` on 5G WiFi (there is no password). Once connected, open the following link with Android VLC:
@@ -69,4 +70,6 @@ The Ethernet switch includes a WiFi hotspot. Connect to the SSID ``InatechDemo``
 
 ![](pics/android_vlc.jpg)
 
-**Note**: The delay of the stream displayed in VLC is caused by VLC which is buffering 1000ms of video by default.
+**Note**:
+ - Multiple clients can connect to the same RTSP link.
+ - The delay of the stream displayed in VLC is caused by VLC which is buffering 1000ms of video by default.
