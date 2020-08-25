@@ -62,6 +62,7 @@ Numpad keys:
  - ``Slash`` (/): no transformation
  - ``Zero`` (0): Pause/Unpause rendering
  - ``One`` (1): Enable/Disable "frame time" overlay
+   - Note: use the pause function if numbers are refreshing too fast.
 
 ## Smartphone and VLC
 The Ethernet switch includes a WiFi hotspot. Connect to the SSID ``InatechDemo`` on 5G WiFi (there is no password). Once connected, open the following link with Android VLC:
@@ -73,3 +74,16 @@ The Ethernet switch includes a WiFi hotspot. Connect to the SSID ``InatechDemo``
 **Note**:
  - Multiple clients can connect to the same RTSP link.
  - The delay of the stream displayed in VLC is caused by VLC which is buffering 1000ms of video by default.
+
+## Next
+You got the demo working? Congratulation!
+
+Additional topics:
+ - [Howto read DLT traces from camera and stitcher?](../howto/dlt/)
+ - [Howto measure PTP clock delay with oscilloscope?](../howto/oscilloscope_and_ptp/)
+
+Suggestions of what to show with the demo:
+ - Camera frame delay below 100us (*TODO*)
+ - Camera software PLL improving with PTP clock sync improving (*TODO*)
+ - Stitching at 60fps (and more?) (*TODO*)
+ 
