@@ -75,16 +75,3 @@ Each computer (camera system and stitcher) runs a DLT daemon.
 
 The stitcher board has a fixed IP address: ``10.42.0.1``.
 The camera boards have IP address chosen by the DHCP server running is the Ethernet switch. Please use the web interface of the switch at: ``http://10.42.0.254`` to find the IP addresses of the camera systems.
-
-### Oscilloscope and PTP clock
-It is possible measure the delay between the system clocks of the camera systems. The linux kernel was modified to output a *pulse per second* (i.e., ``PPS``) on the ``GPIO 18`` pin.
-
-More about Raspberry Pi GPIO: https://www.raspberrypi.org/documentation/usage/gpio/
-
-![](pics/pinout_ptp_pps.jpg)
-
-With a multi-channel oscilloscope, one can measure the delay while the system is running.
-
-![](pics/ptp_pps_osc_comp.jpg)
-
-Important note: the pulse corresponds to the PTP clock (system clock) of the OS, not the camera trigger. The system clock is used to align camera trigger. This pulse is generated using an interrupt. Since the OS is not realtime, the interrupt might be late. Watch syslog over DLT for a warning concerning late interrupt. 
