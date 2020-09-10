@@ -85,7 +85,17 @@ The Ethernet switch includes a WiFi hotspot. Connect to the SSID ``InatechDemo``
  - The delay of the stream displayed in VLC is caused by VLC which is buffering 1000ms of video by default.
 
 ### Other players
-RTSP stream can be opened with many different video players (e.g., ``ffmpeg``, ``gstreamer``, ...).
+RTSP stream can be opened with many different video players.
+
+#### ``ffmpeg``
+
+    ffplay rtsp://10.42.0.1:8554/inastitch
+
+#### ``gstreamer``
+
+    gst-launch-1.0 rtspsrc location=rtsp://10.42.0.1:8554/inastitch drop-on-latency=true use-pipeline-clock=true do-retransmission=false latency=0 ! rtpjpegdepay ! jpegparse ! jpegdec ! fpsdisplaysink sync=false text-overlay=true
+
+Note: this ``gstreamer`` command-line is configured for low-latency playback.
 
 ## Next
 > You got the demo working? Congratulation!
