@@ -26,3 +26,20 @@ If you need to build ``dlt-viewer`` yourself from source, see build instructions
 
 ## DLT App and Context identifiers
 ![](dlt_viewer_app_ids.png)
+
+For each ECU:
+ - ``SYS`` ``JOUR``: System log from ``/var/log/syslog``.
+   - Note: ``PTP`` precision is logged here.
+
+For camera ECU:
+ - ``CAM``: Modified Raspberry Pi camera tool (``raspivid``) with PLL.
+   - ``MAIN``: Main logs (e.g., start-up options, software version).
+   - ``FRAM``: On frame event log: PLL accuracy.
+ - ``RTPS``: ``inastitch`` talker.
+   - ``MAIN``: Main logs (e.g., start-up options, software version).
+   - ``FRAM``: On frame event log: sent frame and timestamp.
+
+For stitcher ECU:
+ - ``STIT``: ``inastitch`` listener.
+   - ``MAIN``: Main logs (e.g., start-up options, software version).
+   - ``FILE``: File transfer (to be used with ``Filetransfer`` plug-in) for calibration debug images.
