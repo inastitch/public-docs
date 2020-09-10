@@ -12,7 +12,7 @@ Via the web-interface, go to "Terminal" (see *top-right* corner), and type the f
 ## WireShark
 This is an example of traffic from a camera streaming ``RTP/JPEG``:
 
-*TODO*
+![](wireshark_port_mirror_rtp.png)
 
 ### WireShark and AVTP
 
