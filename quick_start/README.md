@@ -1,6 +1,8 @@
 # Quick start
+> You got a box containing the parts for an ``inastitch`` demo? You are at the right place.
+
 ## Introduction
-This page describes how to connect together the different parts of the ``inasitch`` demo.
+This page describes how to connect together the different parts of the ``inastitch`` demo.
 
 This is the final result:
 ![](pics/overview.jpg)
@@ -47,7 +49,7 @@ Power and network cables were disconnected to prevent any connector damage durin
 - **(A)** connect the HDMI cable to the stitcher using the adapter.
   - Note: the stitcher has 2 HDMI outputs, it does not matter which is used, as long as only one is used.
 - **(B)** connect USB power to the stitcher or the USB power adapter.
-  - Note: the display board has two micro-USB connector: be careful to the connec the one for USB power.
+  - Note: the display board has two micro-USB connector: be careful to the connect the one for USB power (the other one is for touchscreen only).
 
 ### Numpad
 ![](pics/overview4.jpg)
@@ -56,13 +58,13 @@ Power and network cables were disconnected to prevent any connector damage durin
 
 Numpad keys:
  - ``Enter`` (Entrée): run OpenCV calibration with current video frames to make new transformation
-   - Note: the calibration can failed when the amount matching features is too low. Debug images are available over DLT.
+   - Note: the calibration can fail when the amount of matching features is too low. Debug images are available over DLT. See the end of this page for instructions.
  - ``Backspace`` (<-): reload saved transformation
  - ``Star`` (\*): save current transformation
  - ``Slash`` (/): no transformation
  - ``Zero`` (0): Pause/Unpause rendering
  - ``One`` (1): Enable/Disable "frame time" overlay
-   - Note: use the pause function if numbers are refreshing too fast.
+   - Note: use the pause function if overlay is refreshing too fast.
 
 ## Smartphone and VLC
 The Ethernet switch includes a WiFi hotspot. Connect to the SSID ``InatechDemo`` on 5G WiFi (there is no password). Once connected, open the following link with Android VLC:
@@ -76,11 +78,11 @@ The Ethernet switch includes a WiFi hotspot. Connect to the SSID ``InatechDemo``
  - The delay of the stream displayed in VLC is caused by VLC which is buffering 1000ms of video by default.
 
 ## Next
-You got the demo working? Congratulation!
+> You got the demo working? Congratulation!
 
 Additional topics:
- - [Howto read DLT traces from camera and stitcher?](../howto/dlt/)
- - [Howto measure PTP clock delay with oscilloscope?](../howto/oscilloscope_and_ptp/)
+ - [**Howto** read DLT traces from camera and stitcher?](../howto/dlt/)
+ - [**Howto** measure PTP clock delay with oscilloscope?](../howto/oscilloscope_and_ptp/)
  - Howto update demo software? (*TODO*)
  - Howto analyze Ethernet traffic with WireShark? (*TODO*)
 
