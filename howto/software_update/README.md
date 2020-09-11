@@ -39,10 +39,39 @@ You can check the internet connection from the router with the "Ping" tool:
 
 ## Update
 ### Automatic update
-*TODO*
+Update should occur automatically at start-up.
+
+*TODO: DLT verification*
 
 ### Manual update
-*TODO*
+It is also possible to trigger the update from command-line.
+
+Connect to the target you want to update using ``ssh``. For the stitcher:
+
+    ssh pi@10.42.0.1
+    # password: inatech
+    
+    sudo apt update
+    sudo apt install inastitch
+
+For the camera:
+
+    ssh pi@10.42.0.32
+    # password: inatech
+    
+    sudo apt update
+    sudo apt install inartpsend
 
 ## Repository
-*TODO*
+``inastitch`` may work on other targets.
+
+Add **one** of these lines to ``/etc/apt/source:list``, depending on your CPU architecture:
+
+    # ARM 32-bit
+    deb [trusted=yes] http://vjordan.info/repo/inastitch/armhf ./
+    
+    # ARM 64-bit
+    deb [trusted=yes] http://vjordan.info/repo/inastitch/arm64 ./
+    
+### Tested targets
+ - Nvidia Jetson Nano, running Ubuntu 18.04
