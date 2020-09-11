@@ -104,7 +104,7 @@ Additional topics:
  - [**Howto** read DLT traces from camera and stitcher?](../howto/dlt/)
  - [**Howto** measure PTP clock delay with oscilloscope?](../howto/oscilloscope_and_ptp/)
  - [**Howto** analyze Ethernet traffic with WireShark?](../howto/wireshark_and_mirroring/)
- - Howto update demo software? (*TODO*)
+ - [**Howto** update demo software?](../howto/software_update/)
 
 Suggestions of what to show with the demo:
  - Camera frame delay below 100us (*TODO*)
