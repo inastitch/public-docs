@@ -22,10 +22,12 @@ After starting a new calibration, new files should become available in the "File
 Note: the process occurs again for the left image. Left and center image are flipped, therefore left become right image.
 
 ## What happens when I start calibration?
-### Take current camera frame
+This is the calibration recipe.
+
+### 1. Take current camera frame
 The current *center* and *right* camera images are taken. Camera field-of-view need to overlap, and each image need to be captured at the same time.
 
-### Run ``SIFT`` to find features
+### 2. Run ``SIFT`` to find features
 ``SIFT`` stands for "Scale-Invariant Feature Transform", see: https://en.wikipedia.org/wiki/Scale-invariant_feature_transform.
 
 Features are searched in the *center* and *right* images.
@@ -36,7 +38,7 @@ Features are searched in the *center* and *right* images.
 
 Note: large areas of solid color with no details have no feature, for example the blue sky or white walls. On the other hand, trees and vegetation have many little details with each leaf becoming a feature.
 
-### Match the same features
+### 3. Match the similar features
 Similar features between the two images are matched together.
 
 ![](inastitch_matches.jpg)
@@ -45,7 +47,7 @@ Note1: the matches will happen where the two image overlap. It is important to c
 
 Note2: a few matches a wrong.
 
-### Calculate transformation matrix
+### 4. Calculate transformation matrix
 A transformation matrix is calculated to best fit the matches.
 
 The transformation matrix is applied to each pixel of the *right* image, in order to warp it into the point of view of the center image.
@@ -54,12 +56,12 @@ The transformation matrix is applied to each pixel of the *right* image, in orde
 
 Note: images could be warpped into different points of view.
 
-### Merge
+### 5. Merge
 Because the *right* image was warpped into the point of view of the *center* image, it can be copied without transformation.
 
 ![](inastitch_pano.jpg)
 
-### Left and right
+### 6. Repeat the same for the left
 By applying the same calibration to the *left* image, all images can be stitched together.
 
 ![](inastitch_pano_final.jpg)
