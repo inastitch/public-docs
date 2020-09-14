@@ -38,6 +38,8 @@ Features are searched in the *center* and *right* images.
 
 Note: large areas of solid color with no details have no feature, for example the blue sky or white walls. On the other hand, trees and vegetation have many little details with each leaf becoming a feature.
 
+> OpenCV function is ``cv::Feature2D::detectAndCompute``.
+
 ### 3. Match the similar features
 Similar features between the two images are matched together.
 
@@ -47,6 +49,8 @@ Note1: the matches will happen where the two image overlap. It is important to c
 
 Note2: a few matches a wrong.
 
+> OpenCV function is ``cv::DescriptorMatcher::knnMatch``.
+
 ### 4. Calculate transformation matrix
 A transformation matrix is calculated to best fit the matches.
 
@@ -55,6 +59,8 @@ The transformation matrix is applied to each pixel of the *right* image, in orde
 ![](inastitch_panoR.jpg)
 
 Note: images could be warpped into different points of view.
+
+> OpenCV function is ``cv::findHomography`` and ``cv::warpPerspective``.
 
 ### 5. Merge
 Because the *right* image was warpped into the point of view of the *center* image, it can be copied without transformation.
