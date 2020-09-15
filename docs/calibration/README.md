@@ -1,4 +1,5 @@
 # Calibration
+> *Work in progress*
 
 ## A flower and a mountain
 Let's imagine we want to make a panoramic picture of a flower in front of a mountain...
